@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input, select, textarea {
+    margin-bottom: 10px;}
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+    </style>
+</head>
+<body>
+    <fieldset>
+    <table style="border:0;" width="500px" height="400px" align="center">
+        <tr>
+            <td>Username</td>
+            <td>:</td>
+            <td><input id="idusername" type="text" name="username" placeholder="username"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td><input id="idpassword" type="password" name="password" placeholder="password"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><input id="idemail" type="email" name="email" placeholder="email"></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td>:</td>
+            <td><input id="idlahir" type="date" name="date"></td>
+        </tr>
+        <tr>
+            <td>Usia</td>
+            <td>:</td>
+            <td><input id="usia" type="number" name="usia"></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td><input type="radio" name="jeniskelamin" value="male"/>Laki-laki
+            <input type="radio" name="jeniskelamin" value="female"> Perempuan</td>
+        </tr>
+        <tr>
+            <td>Kota Asal</td>
+            <td>:</td>
+            <td><select name="kota">
+                <option value="Jakarta"> Jakarta</option>
+                <option value="Medan">Medan</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Balikpapan">Balikpapan</option>
+                <option value="Makasar">Makasar</option>
+                <option value="Jayapura">Jayapura</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Note</td>
+            <td>:</td>
+            <td><textarea rows="10" cols="40" name="deskripsi"></textarea></td></td> 
+        </tr>
+        <tr>
+            <td>Upload Foto</td>
+            <td>:</td>
+            <td><input id="idfoto" type="file" name="pasfoto"></td>
+        <tr>
+            <td colspan="5">
+            <input type="checkbox" name="check" value="ya">
+            Saya bersedia mengikuti aturan yang berlaku
+            </td>
+        </tr>
+    <tr>
+        <td>
+            <input type="submit" value="submit">
+             <input type="reset" value="reset">
+        </td>
+    </tr>
+    </table>
+    </fieldset>
+</body>
+</html>
